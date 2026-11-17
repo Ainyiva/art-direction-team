@@ -1,0 +1,43 @@
+name: anya/art-direction-team
+version: 1.0.0
+title: Art direction team
+description: Finds an art direction for a product page with you, round by round. The hero comes first, then single elements in numbered galleries, with each of your notes relayed word for word as one small change. You pick one direction, then an animator brings it to life in code. You decide every step; nothing ships without you.
+icon: icon.svg
+authors:
+  - name: Anya Ivanova
+    role: author
+license: Apache-2.0
+when:
+  - find an art direction for a landing page or hero section
+  - explore visual variants from references as numbered galleries
+  - iterate on a hero illustration element by element
+  - animate a chosen hero design in code
+
+files:
+  - path: icon.svg
+  - path: docs/art-direction-playbook.md
+    description: How the team finds an art direction with the owner, and the lessons from a real run.
+
+roles:
+  orchestrator:
+    kind: manager
+    start: with_team
+    files: [docs/art-direction-playbook.md]
+    instructions_file: managers/orchestrator.md
+
+  planner:
+    kind: manager
+    start: with_team
+    instructions_file: managers/planner.md
+
+  designer:
+    kind: worker
+    description: Turns references and notes into numbered galleries of hero and element variants.
+    files: [docs/art-direction-playbook.md]
+    instructions_file: workers/designer.md
+
+  animator:
+    kind: worker
+    description: Brings the chosen direction to life with motion in code, tuned note by note.
+    files: [docs/art-direction-playbook.md]
+    instructions_file: workers/animator.md
