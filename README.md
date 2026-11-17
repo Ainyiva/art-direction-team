@@ -13,7 +13,7 @@ The full process is in [docs/art-direction-playbook.md](docs/art-direction-playb
 
 ## Use it
 
-1. Download `art-direction-team.team`.
+1. Download [`art-direction-team.team`](https://github.com/Ainyiva/art-direction-team/releases/latest/download/art-direction-team.team) from the latest release.
 2. Double-click it, and Domios opens it for review. Or run `domios team import art-direction-team.team`.
 3. Start the team from your templates and send the Orchestrator your references.
 
